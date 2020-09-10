@@ -1,0 +1,33 @@
+name: contato
+description: Flutter Web Project to Make Apps with PWA
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+
+  universal_html: ^1.2.1
+
+  flutter_localizations:
+    sdk: flutter
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  effective_dart: 1.1.2
+
+flutter:
+
+  uses-material-design: true
+  assets:
+  - assets/
+  - i18n/
