@@ -1,6 +1,6 @@
 # Flutter web routing without hashtag
 
-Flutter Web/PWA project with i18n localization, routes navigation without '/#/', Firebase and Effective Dart.
+Flutter Web/PWA project with i18n localization, routes navigation without '#', Firebase and Effective Dart.
 
 
 ## Getting Started
