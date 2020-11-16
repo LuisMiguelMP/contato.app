@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  "Home page.",
+                  "Miguel page.",
                   style: TextStyle(
                       fontSize: 13, fontFamily: "Hack", color: Colors.white),
                 ),

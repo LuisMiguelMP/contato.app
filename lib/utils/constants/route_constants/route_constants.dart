@@ -1,2 +1,2 @@
 const String homeRoute = '/';
-const String votreRoute = '/votre';
+const String miguelRoute = '/miguel';

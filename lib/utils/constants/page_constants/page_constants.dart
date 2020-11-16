@@ -1,2 +1,2 @@
 const String homeTitle = '>contato.app_';
-const String votreTitle = './votre_';
+const String miguelTitle = './miguel_';

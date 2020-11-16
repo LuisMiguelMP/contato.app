@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="This is your portfolio.">
 
 
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,10 +15,17 @@
   <link rel="icon" type="image/png" href="favicon.png"/>
 
   <title>contato.app</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" id="custom-manifest">
 </head>
 
-<body>
+<body>  <script>
+    if(window.location.pathname == '/miguel'){
+      document.querySelector('#custom-manifest').setAttribute('href', '/pages/miguel/manifest.json');
+    }
+    else{
+      document.querySelector('#custom-manifest').setAttribute('href', '/manifest.json');
+    }
+  </script>
 
   <script src="/__/firebase/7.19.1/firebase-app.js"></script>
   <script src="/__/firebase/7.19.1/firebase-analytics.js"></script>

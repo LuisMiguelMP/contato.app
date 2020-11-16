@@ -6,9 +6,9 @@ import 'package:universal_html/html.dart' as html;
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (html.window.location.pathname) {
-      case votreRoute:
-        html.window.history.pushState(null, votreTitle, votreRoute);
-        return MaterialPageRoute(builder: (context) => VotrePage());
+      case miguelRoute:
+        html.window.history.pushState(null, miguelTitle, miguelRoute);
+        return MaterialPageRoute(builder: (context) => MiguelPage());
       default:
         html.window.history.pushState(null, homeTitle, homeRoute);
         return MaterialPageRoute(builder: (context) => HomePage());

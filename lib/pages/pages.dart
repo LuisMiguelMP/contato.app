@@ -1,2 +1,2 @@
 export 'home/home_page.dart';
-export 'votre/votre_page.dart';
+export 'miguel/miguel_page.dart';
