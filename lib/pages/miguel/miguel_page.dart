@@ -27,7 +27,7 @@ class MiguelPage extends StatelessWidget {
                     'Luís Miguel Massih Pereira',
                     style: TextStyle(
                       fontFamily: 'Hack',
-                      fontSize: 26.0,
+                      fontSize: 22.0,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
