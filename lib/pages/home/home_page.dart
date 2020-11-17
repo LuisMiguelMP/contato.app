@@ -18,10 +18,13 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
-                  "Hello! If you're on the browser, increase '/miguel' in the end of the URL on the address bar to test the routing navigation.",
-                  style: TextStyle(
-                      fontSize: 13, fontFamily: "Hack", color: Colors.white),
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    "Hello! If you're on the browser, increase '/miguel' in the end of the URL on the address bar to test the routing navigation.",
+                    style: TextStyle(
+                        fontSize: 13, fontFamily: "Hack", color: Colors.white),
+                  ),
                 ),
               ],
             ),
