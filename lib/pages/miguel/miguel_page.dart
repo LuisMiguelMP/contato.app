@@ -27,7 +27,7 @@ class MiguelPage extends StatelessWidget {
                     'Luís Miguel Massih Pereira',
                     style: TextStyle(
                       fontFamily: 'Hack',
-                      fontSize: 22.0,
+                      fontSize: 21.0,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
@@ -49,7 +49,7 @@ class MiguelPage extends StatelessWidget {
                     padding: EdgeInsets.all(0.0),
                     shape: StadiumBorder(),
                     child: Container(
-                      width: 369,
+                      width: 333,
                       height: 42,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(0.0),
@@ -92,7 +92,7 @@ class MiguelPage extends StatelessWidget {
                     padding: EdgeInsets.all(0.0),
                     shape: StadiumBorder(),
                     child: Container(
-                      width: 369,
+                      width: 333,
                       height: 42,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(0.0),
@@ -141,7 +141,7 @@ class MiguelPage extends StatelessWidget {
                     padding: EdgeInsets.all(0.0),
                     shape: StadiumBorder(),
                     child: Container(
-                      width: 369,
+                      width: 333,
                       height: 42,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(0.0),
@@ -183,7 +183,7 @@ class MiguelPage extends StatelessWidget {
                     padding: EdgeInsets.all(0.0),
                     shape: StadiumBorder(),
                     child: Container(
-                      width: 369,
+                      width: 333,
                       height: 42,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(0.0),
