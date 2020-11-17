@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="This is your portfolio.">
+  <meta name="description" content="contato.app portofolio">
 
 
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,9 +18,11 @@
   <link rel="manifest" id="custom-manifest">
 </head>
 
-<body>  <script>
+<body>
+  
+  <script>
     if(window.location.pathname == '/miguel'){
-      document.querySelector('#custom-manifest').setAttribute('href', '/pages/miguel/manifest.json');
+      document.querySelector('#custom-manifest').setAttribute('href', '/miguel-manifest.json');
     }
     else{
       document.querySelector('#custom-manifest').setAttribute('href', '/manifest.json');
@@ -38,9 +40,18 @@
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('flutter_service_worker.js');
       });
+
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      console.log('Service worker registration succeeded:', registration);
+    }).catch(function(error) {
+      console.log('Service worker registration failed:', error);
+      
+    });
     }
   </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+</script>
+
+<script src="main.dart.js" type="application/javascript"></script>
 </body>
 
 </html>

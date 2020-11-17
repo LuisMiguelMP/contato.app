@@ -1,11 +1,11 @@
 {
-    "name": "contato.app > miguel",
-    "short_name": "contato.app > miguel",
+    "name": "miguel",
+    "short_name": "miguel",
     "start_url": "https://contato.app/miguel",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "This is Miguel Portfolio.",
+    "description": "This is Miguel contact",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
