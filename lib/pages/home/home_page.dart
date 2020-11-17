@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  "Home page.",
+                  "Hello! If you're on the browser, increase '/miguel' in the end of the URL on the address bar to test the routing navigation.",
                   style: TextStyle(
                       fontSize: 13, fontFamily: "Hack", color: Colors.white),
                 ),
