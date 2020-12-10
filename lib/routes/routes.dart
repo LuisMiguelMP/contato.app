@@ -9,6 +9,9 @@ class Routes {
     if (routesList.contains(routeName)) {
       var index = routesList.indexWhere((route) => (route == routeName));
       html.window.history.pushState(null, titlesList[index], routesList[index]);
+      html.window.onPopState.listen((html.PopStateEvent e) {
+        html.window.history.go(1);
+      });
       return MaterialPageRoute(builder: (context) => pagesList[index]);
     } else {
       html.window.history.pushState(null, titlesList[0], routesList[0]);
