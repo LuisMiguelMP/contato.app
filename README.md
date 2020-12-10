@@ -1,11 +1,11 @@
 # Flutter web routing without hashtag
 
-Flutter Web/PWA project with i18n localization, routes navigation without '#', URL Launcher, Firebase and Effective Dart.
+Flutter Multiple PWA Project on different routes, removing '/#/' from URL, including i18n localization, URL Launcher, Firebase and Effective Dart.
 
 
 ## Getting Started
 
-This project is a starting point if you want to develop a Flutter Web/PWA solution, including i18n localization, routes navigation without '/#/' to make url navigation easier, URL Launcher, Firebase configuration and using Effective Dart.
+This project is a starting point if you want to develop a Flutter Multiple PWA solution on the same domain, removing '/#/' from URL to better experience, including i18n localization, URL Launcher, Firebase configuration and using Effective Dart.
 
 If you want to develop your first Flutter project:
 
