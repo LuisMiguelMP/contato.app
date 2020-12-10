@@ -1,12 +1,12 @@
 {
-    "name": "miguel",
-    "short_name": "miguel",
-    "start_url": "https://contato.app/miguel",
-    "scope": "/miguel",
+    "name": "dani",
+    "short_name": "dani",
+    "start_url": "https://contato.app/dani",
+    "scope": "/dani",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "This is Miguel contact",
+    "description": "This is dani contact",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -2,7 +2,7 @@ import 'package:contato/controllers/redirect_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class MiguelPage extends StatelessWidget {
+class DaniPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,15 +16,15 @@ class MiguelPage extends StatelessWidget {
                 children: <Widget>[
                   CircleAvatar(
                     radius: 71.0,
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Colors.blue[600],
                     child: CircleAvatar(
                       radius: 69.0,
-                      backgroundImage: AssetImage('assets/miguel.png'),
+                      backgroundImage: AssetImage('assets/dani.png'),
                     ),
                   ),
                   SizedBox(height: 22.0, width: 150.0),
                   Text(
-                    'Luís Miguel Massih Pereira',
+                    'Daniela Ferreira Ramos da Conceição',
                     style: TextStyle(
                       fontFamily: 'Hack',
                       fontSize: 21.0,
@@ -34,7 +34,7 @@ class MiguelPage extends StatelessWidget {
                   ),
                   SizedBox(height: 7.0, width: 150.0),
                   Text(
-                    'FLUTTER DEVELOPER',
+                    'PUBLICITÁRIA',
                     style: TextStyle(
                       fontFamily: 'Hack',
                       color: Colors.grey[100],
@@ -56,7 +56,7 @@ class MiguelPage extends StatelessWidget {
                           gradient: LinearGradient(
                               begin: Alignment.centerLeft,
                               end: Alignment.centerRight,
-                              colors: [Colors.purple, Colors.blue])),
+                              colors: [Colors.blue[600], Colors.green[400]])),
                       child: Stack(children: [
                         Align(
                           alignment: Alignment.centerLeft,
@@ -71,7 +71,7 @@ class MiguelPage extends StatelessWidget {
                         Align(
                           alignment: Alignment.center,
                           child: Text(
-                            '+55 (048) 99854-5953',
+                            '+55 (048) 98430-8610',
                             style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'Hack',
@@ -83,7 +83,7 @@ class MiguelPage extends StatelessWidget {
                     ),
                     onPressed: () {
                       redirect(
-                          "https://wa.me/5548998545953?text=Hi%2C%20I%20loved%20https%3A%2F%2Fcontato.app%2Fmiguel!");
+                          "https://wa.me/5548998545953?text=Hi%2C%20I%20loved%20https%3A%2F%2Fcontato.app%2Fdani!");
                     },
                   ),
                   SizedBox(height: 13.0, width: 150.0),
@@ -99,7 +99,7 @@ class MiguelPage extends StatelessWidget {
                           gradient: LinearGradient(
                               begin: Alignment.centerLeft,
                               end: Alignment.centerRight,
-                              colors: [Colors.purple, Colors.blue])),
+                              colors: [Colors.blue[600], Colors.green[400]])),
                       child: Stack(children: [
                         Align(
                           alignment: Alignment.centerLeft,
@@ -114,7 +114,7 @@ class MiguelPage extends StatelessWidget {
                         Align(
                           alignment: Alignment.center,
                           child: Text(
-                            'lmmp1337@outlook.com',
+                            'ferreira.danielac@gmail.com',
                             style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'Hack',
@@ -127,7 +127,7 @@ class MiguelPage extends StatelessWidget {
                     onPressed: () {
                       var params = Uri(
                         scheme: 'mailto',
-                        path: 'lmmp1337@outlook.com',
+                        path: 'ferreira.danielac@gmail.com',
                         query:
                             'subject=Job opportunity&body=Hello! We will be happy if you work with us!',
                       );
@@ -148,14 +148,14 @@ class MiguelPage extends StatelessWidget {
                           gradient: LinearGradient(
                               begin: Alignment.centerLeft,
                               end: Alignment.centerRight,
-                              colors: [Colors.purple, Colors.blue])),
+                              colors: [Colors.blue[600], Colors.green[400]])),
                       child: Stack(children: [
                         Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: const EdgeInsets.only(left: 18.0),
                             child: FaIcon(
-                              FontAwesomeIcons.github,
+                              FontAwesomeIcons.behance,
                               color: Colors.white,
                             ),
                           ),
@@ -163,7 +163,7 @@ class MiguelPage extends StatelessWidget {
                         Align(
                           alignment: Alignment.center,
                           child: Text(
-                            'GitHub.com',
+                            'BeHance.com',
                             style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'Hack',
@@ -174,7 +174,7 @@ class MiguelPage extends StatelessWidget {
                       ]),
                     ),
                     onPressed: () {
-                      redirect('https://www.github.com/luismiguelmp');
+                      redirect('https://www.behance.net/danielaferreir');
                     },
                   ),
                   SizedBox(height: 13.0, width: 150.0),
@@ -190,7 +190,7 @@ class MiguelPage extends StatelessWidget {
                           gradient: LinearGradient(
                               begin: Alignment.centerLeft,
                               end: Alignment.centerRight,
-                              colors: [Colors.purple, Colors.blue])),
+                              colors: [Colors.blue[600], Colors.green[400]])),
                       child: Stack(children: [
                         Align(
                           alignment: Alignment.centerLeft,
@@ -216,7 +216,7 @@ class MiguelPage extends StatelessWidget {
                       ]),
                     ),
                     onPressed: () {
-                      redirect('https://www.linkedin.com/in/luismiguelmp');
+                      redirect('https://linkedin.com/in/danielaferreir');
                     },
                   ),
                 ]),

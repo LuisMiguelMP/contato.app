@@ -2,6 +2,7 @@ const cacheVersion = 'v1';
 const urlsToPrefetch = [
   'https://contato.app',
   'https://contato.app/miguel',
+  'https://contato.app/dani',
 ];
 
 this.addEventListener('install', function(event) {

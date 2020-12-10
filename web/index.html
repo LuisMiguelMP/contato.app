@@ -12,20 +12,31 @@
   <meta name="apple-mobile-web-app-title" content="contato">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>contato.app</title>
   <link rel="manifest" id="custom-manifest">
 </head>
 
 <body>
-  
+
   <script>
-    if(window.location.pathname == '/miguel'){
-      document.querySelector('#custom-manifest').setAttribute('href', '/miguel-manifest.json');
+    function urlExists(url) {
+      const http = new XMLHttpRequest()
+      http.open('HEAD', url, false)
+      http.send()
+      return http.status !== 404
     }
-    else{
-      document.querySelector('#custom-manifest').setAttribute('href', '/manifest.json');
+    const defaultManifest = '/default-manifest.json';
+    const routeName = window.location.pathname;
+    const customManifest = routeName + '-manifest.json';
+
+    const manifestExists = urlExists(customManifest);
+
+    if ((manifestExists) && (routeName !== '/')) {
+      document.querySelector('#custom-manifest').setAttribute('href', customManifest);
+    } else {
+      document.querySelector('#custom-manifest').setAttribute('href', defaultManifest);
     }
   </script>
 
@@ -41,17 +52,17 @@
         navigator.serviceWorker.register('flutter_service_worker.js');
       });
 
-      navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      console.log('Service worker registration succeeded:', registration);
-    }).catch(function(error) {
-      console.log('Service worker registration failed:', error);
-      
-    });
+      navigator.serviceWorker.register('/sw.js').then(function (registration) {
+        console.log('Service worker registration succeeded:', registration);
+      }).catch(function (error) {
+        console.log('Service worker registration failed:', error);
+
+      });
     }
   </script>
-</script>
+  </script>
 
-<script src="main.dart.js" type="application/javascript"></script>
+  <script src="main.dart.js" type="application/javascript"></script>
 </body>
 
 </html>

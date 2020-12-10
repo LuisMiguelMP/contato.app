@@ -13,21 +13,33 @@ class _HomePageState extends State<HomePage> {
         child: Container(
           alignment: Alignment.center,
           color: Colors.black,
-          child: Center(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(
-                    "Hello! If you're on the browser, increase '/miguel' in the end of the URL on the address bar to test the routing navigation.",
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    "Hi! If you're on the browser, insert '/miguel'",
                     style: TextStyle(
                         fontSize: 13, fontFamily: "Hack", color: Colors.white),
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    "at the end of URL to test routing.",
+                    style: TextStyle(
+                        fontSize: 13, fontFamily: "Hack", color: Colors.white),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),

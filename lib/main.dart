@@ -1,5 +1,5 @@
 import 'package:contato/routes/routes.dart';
-import 'package:contato/utils/constants/constants.dart';
+import 'package:contato/repositories/pages_repository.dart';
 import 'package:contato/utils/localizations/localizations.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: homeRoute,
+        initialRoute: routesList[0],
         onGenerateRoute: Routes.generateRoute,
         onGenerateTitle: (BuildContext context) =>
             I18n.of(context).translate('title'),
